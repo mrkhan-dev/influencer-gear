@@ -89,6 +89,13 @@ ul a {
   cursor: pointer;
 }
 
+/* Sponsor Section */
+.sponsor-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 87px 180px;
+}
+
 /* Responsive Media Query for Mobile Device */
 @media screen and (max-width: 576px) {
   nav {
@@ -143,5 +150,19 @@ ul a {
   .banner-img img {
     width: 300px;
     height: 300px;
+  }
+
+  /* Sponsor Section */
+  .sponsor-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    padding: 50px 42px;
+  }
+
+  .sponsor-image img {
+    width: 62px;
   }
 }
