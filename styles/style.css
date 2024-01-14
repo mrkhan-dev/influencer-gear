@@ -98,7 +98,10 @@ ul a {
 /* Collections Section */
 
 .collection {
-  padding: 87px 450px;
+  /* padding: 87px 450px; */
+
+  width: 50%;
+  margin: 0 auto;
 }
 .collection-title {
   margin-bottom: 30px;
@@ -112,6 +115,7 @@ ul a {
 .card-group {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -148,7 +152,7 @@ ul a {
 
 .card {
   width: 329px;
-  height: 480px;
+  height: 500px;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -159,13 +163,48 @@ ul a {
 }
 
 .btn-2 {
-  margin-left: 72.9rem;
+  margin-left: 63rem;
   margin-top: 50px;
   color: rgba(224, 44, 109, 0.87);
   font-size: 1rem;
   font-weight: 700;
   border: 0;
   background: transparent;
+}
+
+/* feature section */
+.feature {
+  width: 60%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 96px;
+}
+
+.feature-title {
+  color: #0a0826;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.feature-descriptions {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #6c6c6c;
+  font-size: 1rem;
+  padding: 0 300px 0 0;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.btn-3 {
+  padding: 10px 40px;
+  gap: 8px;
+  background: #e02c6d;
+  color: #fff;
+  font-weight: 700;
+  border: 0;
 }
 
 /* ------------------------------------------------------------- */
@@ -227,8 +266,9 @@ ul a {
 
   /* Sponsor Section */
   .sponsor-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 31px;
@@ -261,7 +301,38 @@ ul a {
   }
 
   .btn-2 {
-    margin-left: 207.9px;
+    margin-left: 113px;
     margin-top: 18px;
+    font-size: 0.6rem;
+  }
+
+  /* feature section */
+  .feature {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .feature-title {
+    font-size: 24px;
+    padding: 0 34px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .feature-descriptions {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .btn-3 {
+    margin: 0 126px;
+  }
+
+  .feature-image {
+    padding: 0 20px;
+  }
+
+  .feature-image img {
+    width: 100%;
   }
 }
