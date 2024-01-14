@@ -73,15 +73,14 @@ ul a {
   align-items: center;
 }
 
-.btn-1,
-.fa-arrow-right {
+.btn-1 {
   font-size: 1rem;
   font-weight: 700;
   display: inline-flex;
   padding: 10px 20px;
   align-items: center;
   justify-content: center;
-  gap: 0px;
+  gap: 10px;
   border-radius: 41px;
   color: #fff;
   background: #e02c6d;
@@ -93,9 +92,83 @@ ul a {
 .sponsor-section {
   display: flex;
   justify-content: space-around;
-  padding: 87px 180px;
+  padding: 87px 200px;
 }
 
+/* Collections Section */
+
+.collection {
+  padding: 87px 450px;
+}
+.collection-title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-title {
+  padding: 16px 0 6px 14px;
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.card-pricing {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  padding: 0 0 8px 14px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.card-ratings {
+  padding-left: 14px;
+}
+
+.card-descriptions {
+  color: var(--Gray-50, #787885);
+  font-family: Inter;
+  padding: 0 0 0px 14px;
+  font-size: 0.87rem;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 0.252px;
+}
+
+.card {
+  width: 329px;
+  height: 480px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  padding: 17px 15px 0px 15px;
+}
+
+.btn-2 {
+  margin-left: 72.9rem;
+  margin-top: 50px;
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0;
+  background: transparent;
+}
+
+/* ------------------------------------------------------------- */
 /* Responsive Media Query for Mobile Device */
 @media screen and (max-width: 576px) {
   nav {
@@ -164,5 +237,31 @@ ul a {
 
   .sponsor-image img {
     width: 62px;
+  }
+
+  /* Collection Section */
+  .card-group {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 400px;
+    height: auto;
+  }
+
+  .collection {
+    padding: 0 55px;
+  }
+
+  .card-image img {
+    width: 100%;
+  }
+
+  .btn-2 {
+    margin-left: 207.9px;
+    margin-top: 18px;
   }
 }
